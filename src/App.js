@@ -11,8 +11,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="flex">
-          <Sidebar />
+        <div className="flex ">
+            <Sidebar />
+          </div>
           <div className="pl-3 w-full">
             <Mynav />
             <Routes>
@@ -21,7 +22,6 @@ function App() {
               <Route path="/form" element={<Formsec />} />
             </Routes>
           </div>
-        </div>
       </BrowserRouter>
     </>
   );
