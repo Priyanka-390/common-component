@@ -7,11 +7,11 @@ const Tabs = () => {
   }
   return (
     <div className="bg-black py-20">
-      <div className="container max-w-[1140px] px-3 mx-auto">
-        <div className="flex items-center gap-10">
+      <div className="container  md:px-12 px-4 mx-auto">
+        <div className="flex items-center md:gap-10 gap-3">
           <button
             onClick={() => handletab("tab1")}
-            className={`font-poppins text-4xl text-white font-bold ${
+            className={`font-poppins lg:text-4xl sm:text-2xl text-lg text-white font-bold ${
               tab === "tab1" ? "!text-red-600 duation-300" : ""
             }`}
           > 
@@ -19,7 +19,7 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => handletab("tab2")}
-            className={`font-poppins text-4xl text-white font-bold ${
+            className={`font-poppins lg:text-4xl sm:text-2xl text-lg text-white font-bold ${
               tab === "tab2" ? "!text-red-600 duration-300" : ""
             }`}
           >
@@ -27,7 +27,7 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => handletab("tab3")}
-            className={`font-poppins text-4xl text-white font-bold ${
+            className={`font-poppins lg:text-4xl sm:text-2xl text-lg text-white font-bold ${
               tab === "tab3" ? "!text-red-600 duration-300" : ""
             }`}
           >
@@ -35,7 +35,7 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => handletab("tab4")}
-            className={`font-poppins text-4xl text-white font-bold ${
+            className={`font-poppins lg:text-4xl sm:text-2xl text-lg text-white font-bold ${
               tab === "tab4" ? "!text-red-600 duration-300" : ""
             }`}
           >
@@ -44,7 +44,7 @@ const Tabs = () => {
         </div>
         <div className="pt-10">
           {tab === "tab1" && (
-            <p className="text-white text-2xl font-medium font-poppins">
+            <p className="text-white lg:text-2xl md:text-lg text-base font-medium font-poppins">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
               animi, voluptatum veniam possimus molestiae recusandae commodi
               ipsa officiis quidem eaque debitis aliquid ut a harum perspiciatis
@@ -57,7 +57,7 @@ const Tabs = () => {
             </p>
           )}
           {tab === "tab2" && (
-            <p className="text-white text-2xl font-medium font-poppins">
+            <p className="text-white lg:text-2xl md:text-lg text-base font-medium font-poppins">
               officiis quidem eaque debitis aliquid ut a harum perspiciatis .
               Tempora earum placeat voluptas error deleniti exercitationem. Ex
               quia numquam in officiis eveniet voluptatum pariatur blanditiis
@@ -68,7 +68,7 @@ const Tabs = () => {
             </p>
           )}
           {tab === "tab3" && (
-            <p className="text-white text-2xl font-medium font-poppins">
+            <p className="text-white lg:text-2xl md:text-lg text-base font-medium font-poppins">
               voluptas error deleniti exercitationem. Ex quia numquam in
               officiis eveniet voluptatum pariatur blanditiis maxime et
               reiciendis, nemo quaerat minima suscipit labore commodi obcaecati
@@ -77,7 +77,7 @@ const Tabs = () => {
             </p>
           )}
           {tab === "tab4" && (
-            <p className="text-white text-2xl font-medium font-poppins">
+            <p className="text-white lg:text-2xl md:text-lg text-base font-medium font-poppins">
               voluptas error deleniti exercitationem. Ex quia numquam in
               officiis eveniet voluptatum pariatur blanditiis maxime et
               reiciendis, nemo quaerat minima suscipit labore commodi obcaecati

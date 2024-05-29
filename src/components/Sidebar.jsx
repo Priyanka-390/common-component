@@ -1,25 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/svg/logo.svg";
 import { AccordianIcon, DashBoard, FormIcon, SliderIcon } from "./Icons";
 
-// const Sidebar = () => {
-//   return (
-//     <div className="flex  top-0 left-0 bottom-0 w-[400px] p-5  bg-white min-h-[100vh]">
-//         <ul className="pt-10">
-//            <li><Link to='/client' className="font-poppins text-black text-2xl">Slider</Link></li>
-//             <li> <Link to='/tabs' className="font-poppins text-black text-2xl">Tabs </Link></li>
-//              <li className="font-poppins text-black text-2xl">Form</li>
-//             <li className="font-poppins text-black text-2xl">Accordian</li>
-//         </ul>
-//       </div>
-//   );
-// };
 const Sidebar = () => {
+  const location = useLocation();
   return (
-    <div>
+    <>
       <sidebar>
-        <div className="fixed bg-white top-0 bottom-0 overflow-y-scroll">
-          <div className=" relative  lg:w-[316px] md:w-[150px] w-[62px] px-6">
+        <div className="bg-white min-h-screen fixed overflow-y-scroll">
+          <div className=" relative  lg:w-[256px] md:w-[150px] w-[68px] px-4">
             <div className="flex justify-center items-center flex-col">
               <img src={logo} alt="logo" className="pt-7" />
               <h1 className="font-poppins text-xl font-bold md:block hidden leading-normal text-black pt-[19px]">
@@ -36,7 +25,7 @@ const Sidebar = () => {
               <a className="flex" href="">
                 {" "}
                 <DashBoard />
-                <span className="text-black group-hover:text-[#EC6707] md:pl-4 md:block hidden font-poppins text-sm font-medium">
+                <span className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/tabs" ? "text-[#EC6707] duration-300":"text-black"}`}>
                   Tabs
                 </span>
               </a>
@@ -47,8 +36,10 @@ const Sidebar = () => {
             >
               <a className="flex" href="">
                 {" "}
-               <SliderIcon/>
-                <span className="text-black  group-hover:text-[#EC6707] md:pl-4 md:block hidden font-poppins text-sm font-medium">
+                <SliderIcon />
+                <span
+                  className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/client" ? "text-[#EC6707] duration-300":"text-black"}`}
+                >
                   Slider
                 </span>
               </a>
@@ -59,8 +50,8 @@ const Sidebar = () => {
             >
               <a className="flex" href="">
                 {" "}
-               <AccordianIcon/>
-                <span className="text-black  md:pl-4 group-hover:text-[#EC6707] font-poppins text-sm md:block hidden font-medium">
+                <AccordianIcon />
+                <span className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/acc" ? "text-[#EC6707] duration-300":"text-black"}`}>
                   Accordion
                 </span>
               </a>
@@ -72,7 +63,7 @@ const Sidebar = () => {
               <a className="flex" href="">
                 {" "}
                 <FormIcon />
-                <span className="text-black md:block group-hover:text-[#EC6707] hidden  md:pl-4 font-poppins text-sm font-medium">
+                <span className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/form" ? "text-[#EC6707] duration-300":"text-black"}`}>
                   Form
                 </span>
               </a>
@@ -80,7 +71,7 @@ const Sidebar = () => {
           </div>
         </div>
       </sidebar>
-    </div>
+    </>
   );
 };
 

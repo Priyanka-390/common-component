@@ -11,10 +11,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="flex ">
-            <Sidebar />
-          </div>
-          <div className="pl-3 w-full">
+        <div className="flex w-full">
+          <Sidebar />
+          <div className="pl-3  lg:w-[calc(100%-256px)] md:w-[calc(100%-150px)] w-[calc(100%-68px)] ml-auto">
             <Mynav />
             <Routes>
               <Route path="/client" element={<Clientswiper />} />
@@ -22,6 +21,7 @@ function App() {
               <Route path="/form" element={<Formsec />} />
             </Routes>
           </div>
+        </div>
       </BrowserRouter>
     </>
   );

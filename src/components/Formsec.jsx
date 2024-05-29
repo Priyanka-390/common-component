@@ -4,16 +4,12 @@ const Formsec = () => {
   return (
     <div className='py-20'>
           <div className="container max-w-[1140px] mx-auto px-3">
-              <h2 className="text-black font-poppins text-6xl font-bold pb-10 text-center">Form-Validation</h2>
-              <div className='p-8 border-2 max-w-[600px] mx-auto rounded-2xl border-black'>
-                  {/* <form>
-                      <label className='font-medium pb-4 font-poppins text-black text-xl'>Name</label>
-                      <input type="text" className='max-w-[200px] h-8 border-black' />
-                  </form> */}
+              <h2 className="text-black font-poppins lg:text-6xl sm:text-5xl text-4xl font-bold pb-10 text-center">Form-Validation</h2>
+              <div className='lg:p-8 p-4 border-2 max-w-[600px] mx-auto rounded-2xl border-black'>
                     <form action="submit" >
                       <div className='flex items-center gap-2'>
                            <div>
-                               <label className='font-medium pb-4 font-poppins text-black text-xl'>first-Name</label>
+                               <label className='font-medium pb-4 font-poppins text-black text-xl'>First-Name</label>
                                 <input type="text" className='p-4 !text-black font-poppins w-full sm:text-base text-sm font-normal border border-black rounded-[4px] outline-none placeholder:text-white border-opacity-70'  />
                           </div>
                             <div>
