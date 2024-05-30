@@ -53,14 +53,10 @@ const ClientSwiper = () => {
           ))}
         </Swiper>
         <div className="flex items-center justify-between px-5 mt-5 md:px-0 2xl:mt-0">
-          <button
-            className="2xl:absolute flex group items-center  justify-center w-10 h-10 duration-300 2xl:-translate-y-1/2  rounded-full group border border-black prev-arrow  hover:bg-[#E67E22] hover:border-[#E67E22] 2xl:-left-[50px] top-[110%]  2xl:top-1/2"
-          >
+          <button className="2xl:absolute flex group items-center  justify-center w-10 h-10 duration-300 2xl:-translate-y-1/2  rounded-full group border border-black prev-arrow  hover:bg-[#E67E22] hover:border-[#E67E22] 2xl:-left-[50px] top-[110%]  2xl:top-1/2">
             <LeftArrow />
           </button>
-          <button
-            className="2xl:absolute flex items-center  justify-center w-10 h-10 duration-300 2xl:-translate-y-1/2 border border-black rounded-full group next-arrow hover:bg-[#E67E22] hover:border-[#E67E22] 2xl:-right-[50px] right-3 top-[110%]  2xl:top-1/2"
-          >
+          <button className="2xl:absolute flex items-center  justify-center w-10 h-10 duration-300 2xl:-translate-y-1/2 border border-black rounded-full group next-arrow hover:bg-[#E67E22] hover:border-[#E67E22] 2xl:-right-[50px] right-3 top-[110%]  2xl:top-1/2">
             <RightArrow />
           </button>
         </div>
@@ -70,3 +66,4 @@ const ClientSwiper = () => {
 };
 
 export default ClientSwiper;
+
