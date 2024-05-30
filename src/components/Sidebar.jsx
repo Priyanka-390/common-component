@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/svg/logo.svg";
-import { AccordianIcon, DashBoard, FormIcon, SliderIcon } from "./Icons";
+import { AccordionIcon, DashBoard, FormIcon, SliderIcon } from "./Icons";
 
-const Sidebar = () => {
+const SideBar = () => {
   const location = useLocation();
   return (
     <>
-      <sidebar>
+      <SideBar>
         <div className="bg-white min-h-screen fixed overflow-y-scroll">
           <div className=" relative  lg:w-[256px] md:w-[150px] w-[68px] px-4">
             <div className="flex justify-center items-center flex-col">
@@ -22,57 +22,71 @@ const Sidebar = () => {
               to="/tabs"
               className="mt-4 py-4 hover:bg-orange-white inline-block  md:pl-4 w-full rounded-[22px] group"
             >
-              <a className="flex" href="">
-                {" "}
-                <DashBoard />
-                <span className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/tabs" ? "text-[#EC6707] duration-300":"text-black"}`}>
-                  Tabs
-                </span>
-              </a>
+              {" "}
+              <DashBoard />
+              <span
+                className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${
+                  location.pathname === "/tabs"
+                    ? "text-[#EC6707] duration-300"
+                    : "text-black"
+                }`}
+              >
+                Tabs
+              </span>
             </Link>
             <Link
               to="/client"
               className="mt-2 py-4  md:pl-4 w-full inline-block rounded-[22px] hover:bg-orange-white group"
             >
-              <a className="flex" href="">
-                {" "}
-                <SliderIcon />
-                <span
-                  className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/client" ? "text-[#EC6707] duration-300":"text-black"}`}
-                >
-                  Slider
-                </span>
-              </a>
+              {" "}
+              <SliderIcon />
+              <span
+                className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${
+                  location.pathname === "/client"
+                    ? "text-[#EC6707] duration-300"
+                    : "text-black"
+                }`}
+              >
+                Slider
+              </span>
             </Link>
             <Link
               to="/acc"
               className="mt-2 py-4  md:pl-4 w-full rounded-[22px] inline-block hover:bg-orange-white group"
             >
-              <a className="flex" href="">
-                {" "}
-                <AccordianIcon />
-                <span className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/acc" ? "text-[#EC6707] duration-300":"text-black"}`}>
-                  Accordion
-                </span>
-              </a>
+              {" "}
+              <AccordionIcon />
+              <span
+                className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${
+                  location.pathname === "/acc"
+                    ? "text-[#EC6707] duration-300"
+                    : "text-black"
+                }`}
+              >
+                Accordion
+              </span>
             </Link>
             <Link
               to="/form"
               className="mt-2 py-4  md:pl-4 w-full rounded-[22px] inline-block hover:bg-orange-white group"
             >
-              <a className="flex" href="">
-                {" "}
-                <FormIcon />
-                <span className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${location.pathname === "/form" ? "text-[#EC6707] duration-300":"text-black"}`}>
-                  Form
-                </span>
-              </a>
+              {" "}
+              <FormIcon />
+              <span
+                className={` md:pl-4 md:block hidden font-poppins text-sm font-medium ${
+                  location.pathname === "/form"
+                    ? "text-[#EC6707] duration-300"
+                    : "text-black"
+                }`}
+              >
+                Form
+              </span>
             </Link>
           </div>
         </div>
-      </sidebar>
+      </SideBar>
     </>
   );
 };
 
-export default Sidebar;
+export default SideBar;

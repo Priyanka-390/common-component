@@ -143,7 +143,7 @@ export const FormIcon = () => {
   );
 };
 
-export const AccordianIcon = () => {
+export const AccordionIcon = () => {
    const location = useLocation();
   return (
     <svg
