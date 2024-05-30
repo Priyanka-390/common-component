@@ -8,7 +8,7 @@ import { Navigation } from "swiper/modules";
 
 const ClientSwiper = () => {
   return (
-    <div className="bg-[#F5F5F5] py-24">
+    <div className="bg-[#F5F5F5] lg:py-24 py-16">
       <h2 className="text-black font-poppins pb-10 lg:text-6xl sm:text-5xl text-4xl  font-bold  text-center">
         SWIPER-Slider
       </h2>
@@ -66,4 +66,3 @@ const ClientSwiper = () => {
 };
 
 export default ClientSwiper;
-

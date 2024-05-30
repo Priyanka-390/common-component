@@ -5,9 +5,9 @@ import { BellIcon, MailIcon } from "./Icons";
 const MyNav = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-white md:px-6 ">
+    <div className="bg-white sticky top-0 md:px-6 ">
       <div className="container md:px-12 px-4 mx-auto">
-        <div className="flex relative z-[1] py-4 justify-between items-center">
+        <div className="flex relative z-[1] md:py-4 py-2 justify-between items-center">
           <div className="mb-0">
             <h2 className="font-poppins font-bold sm:text-2xl text-lg leading-9 text-black">
               Components
@@ -17,8 +17,10 @@ const MyNav = () => {
             </p>
           </div>
           <div className="flex md:gap-4 gap-2">
-            <MailIcon />
-            <BellIcon/>
+            <a href="#mailto:">
+              <MailIcon />
+            </a>
+            <a href=""><BellIcon/></a>
          </div>
         </div>
       

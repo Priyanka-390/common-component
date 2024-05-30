@@ -2,7 +2,7 @@ import React from 'react'
 
 const Formsec = () => {
   return (
-    <div className='py-20 bg-[#F5F5F5]'>
+    <div className='lg:py-20 py-16 bg-[#F5F5F5]'>
           <div className="container md:px-12  mx-auto px-3">
               <h2 className="text-black font-poppins lg:text-6xl sm:text-5xl text-4xl font-bold pb-10 text-center">Form-Validation</h2>
               <div className='lg:p-8 p-4 border-2 max-w-[600px] mx-auto rounded-2xl border-black'>

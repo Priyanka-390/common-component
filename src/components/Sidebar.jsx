@@ -6,8 +6,8 @@ const SideBar = () => {
   return (
     <>
       <aside>
-        <div className="bg-white min-h-screen fixed overflow-y-scroll">
-          <div className=" relative  lg:w-[256px] md:w-[200px] w-[68px] md:px-4 px-2">
+        <div className="bg-white h-screen fixed overflow-y-scroll">
+          <div className=" relative  lg:w-[256px] md:w-[200px] sm:w-[68px] w-[40px] md:px-4 px-2">
             <div className="flex justify-center items-center flex-col">
               <img src={logo} alt="logo" className="pt-7" />
               <h1 className="font-poppins text-center text-xl font-bold md:block hidden leading-normal text-black pt-[19px]">

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="flex w-full">
       <SideBar />
-      <div className="pl-3  lg:w-[calc(100%-256px)] md:w-[calc(100%-150px)] w-[calc(100%-68px)] ml-auto">
+      <div className="pl-3  lg:w-[calc(100%-256px)] md:w-[calc(100%-150px)] sm:w-[calc(100%-68px)] w-[calc(100%-40px)] ml-auto">
         <MyNav />
         <Routes>
           <Route path="/" exact element={<Header />}></Route>
