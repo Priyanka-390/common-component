@@ -9,16 +9,20 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="flex w-full">
-      <SideBar />
-      <div className="pl-3  lg:w-[calc(100%-256px)] md:w-[calc(100%-150px)] sm:w-[calc(100%-68px)] w-[calc(100%-40px)] ml-auto">
-        <MyNav />
-        <Routes>
-          <Route path="/" exact element={<Header />}></Route>
-          <Route path="/swiper" exact element={<ClientSwiper />}></Route>
-          <Route path="/tabs" exact element={<Tabs />}></Route>
-          <Route path="/form" exact element={<Formsec />}></Route>
-        </Routes>
+    <div className="flex w-full h-screen mx-auto overflow-hidden bg-[#F5F5F5]">
+      <div className="flex w-full">
+        <SideBar />
+        <div className="flex flex-col w-full">
+          <MyNav />
+          <div className="flex flex-col w-full h-[calc(100vh-150px)] px-12 mt-12 pb-10 overflow-y-scroll">
+            <Routes>
+              <Route path="/" exact element={<Header />}></Route>
+              <Route path="/swiper" exact element={<ClientSwiper />}></Route>
+              <Route path="/tabs" exact element={<Tabs />}></Route>
+              <Route path="/form" exact element={<Formsec />}></Route>
+            </Routes>
+          </div>
+        </div>
       </div>
     </div>
   );
